@@ -9,6 +9,24 @@ class ListaProductos extends Component {
             {id:2, name: 'Camisa Javascript', precio:45},
             {id:3, name: 'Camisa C#', precio:34}
     ]}
+
+    // Una vez que se monta
+    componentDidMount() {
+        console.log(1);
+    }
+
+    // Antes que el componente que se monte
+    componentWillMount() {
+        console.log(2);
+    }
+
+    componentWillUpdate() {
+        console.log(3);
+    }
+
+    componentWillUnmount() {
+        console.log(4);
+    }
     
     render(){
 
